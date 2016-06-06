@@ -1,0 +1,282 @@
+{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf410
+{\fonttbl\f0\froman\fcharset77 Times-Bold;\f1\froman\fcharset77 Times-Roman;\f2\fswiss\fcharset77 Helvetica;
+\f3\froman\fcharset77 Times-Italic;}
+{\colortbl;\red255\green255\blue255;}
+\vieww17960\viewh12720\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+
+\f0\b\fs36 \cf0 \ul \ulc0 LED Spectrum Analyser for iTunes - Read Me file\
+version 2.0.6 Universal Binary
+\f1\b0\fs28 \ulnone \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+
+\f0\b What is it?
+\f1\b0 \
+\
+This is a visualizer plug-in for iTunes on Mac OS X.\
+\
+
+\f0\b What does it do?
+\f1\b0 \
+\
+It creates a spectrum analyser display in the style of a typical hi-fi system, using bargraph displays that emulate LEDs or similar electronic display technology. The bargraphs can show linear or logarithmic levels, and also the peak value of the signal in a number of frequency bands per audio channel. In addition it can show the overall level on a pair of VU (Volume Unit) bargraph meters. Numerous options are included to make a colourful and interesting display.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
+
+\f2\fs24 \cf0 {{\NeXTGraphic Picture 2.png \width17520 \height10480
+}¬}
+\f1\fs28 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b \cf0 \
+What do I do with it?
+\f1\b0 \
+\
+Copy or move the file "LEDSpectrumAnalyser.bundle" into the "iTunes Plug-ins" folder within your home folder hierarchy. The correct location is ~/Library/iTunes/iTunes Plug-ins, where "~" means your personal Home folder. If the plug-ins folder doesn't already exist, simply create it in the Finder, making sure it's named correctly. Within iTunes, the visualizer can be opened using the "LED Spectrum Analyser" menu item in the Visualizer menu. You need to Quit iTunes before moving this to the plug-ins folder to ensure that it loads it next time it runs.\
+\
+
+\f0\b How do I use it?
+\f1\b0 \
+\
+Start some music, click the visualizer button, sit back and enjoy the blinking lights! Once you get bored with that, you might wish to fiddle about with the settings.\
+\
+
+\f0\b How do I change the settings?\
+
+\f1\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f2\fs24 \cf0 {{\NeXTGraphic options.png \width1220 \height1360
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0  
+\f1\fs28 Click on the "Options" icon at top right of the iTunes window. For iTunes version 7.0, there is no Options button - select the View->Visualizer->Options... menu to display the dialog. The options dialog is divided into four tabbed sections - 
+\f3\i Layout
+\f1\i0 , 
+\f3\i Meters
+\f1\i0 , 
+\f3\i Colours
+\f1\i0  and 
+\f3\i About
+\f1\i0 . \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\qc\pardirnatural
+
+\f2\fs24 \cf0 {{\NeXTGraphic Picture 3.png \width8840 \height6740
+}¬}
+\f1\fs28 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\qc
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 Here's what all the options are for:\
+\
+
+\f0\b Layout
+\f1\b0 \
+	Here you can set the overall layout of the display.\
+	\
+	
+\f3\i Side by side
+\f1\i0  - the two audio channels are displayed side by side with the bargraphs extending from bottom to top in the conventional manner. The horizontal axis represents the frequency bands.\
+	\
+	
+\f3\i Back to back
+\f1\i0  - the two channels are arranged back to back, extending from the centre to left and right. The vertical axis represents the frequency bands.\
+	\
+	
+\f3\i Analogue VU meters
+\f1\i0  - the spectrum display is replaced by a pair of old-style analogue VU meters. These show the overall level using a needle on an arc scale. These meters honour the colours, decay rates, response and other parameters of the bargraph meters. \
+\
+	
+\f3\i Fit to window
+\f1\i0  - the display is scaled to fit the whole iTunes display area. By the way it's recommended to always run this visualiser at the "large" window option in iTunes. It will scale to the smaller sizes, but becomes very small indeed, and there is no real performance benefit.\
+\
+	
+\f3\i Large
+\f1\i0  - the display is set to a fixed size 800 pixels wide\
+\
+	
+\f3\i Small
+\f1\i0  - the display is set to a fixed size 560 pixels wide (this is the fixed size used in previous versions of this visualizer).\
+	\
+	
+\f3\i Frequency bands
+\f1\i0  - adjusts the number of bands per audio channel, from 10 up to a maximum of 31. Note that increasing the number of bands will require more processing power - some lower end machines may give unacceptably slow response with a large number of bands. The frequency scale is always logarithmic (i.e. like music). For pro use, 31 bands gives 1/3 octave per band from 20Hz to 20kHz approximately. (Disclaimer: LED Spectrum Analyser is intended primarily to create an attractive display. While its internal mathematics are valid and accurate, it works solely with the data supplied to it by iTunes, which has quite low (8 bit) resolution. This plug-in does not perform its own FFT.)\
+\
+	
+\f3\i Flip left channel
+\f1\i0  (and 
+\f3\i Flip right channel
+\f1\i0 ). These reverse the order of the frequency bands within that audio channel, so you can arrange for low frequencies to be on the left or right, or different for each channel as you wish. The default is for low frequencies to be in the middle, with higher frequencies extending left and right.\
+\
+	
+\f3\i Show border
+\f1\i0  - toggles the border rectangle around the display\
+	\
+	
+\f3\i Show VU meters
+\f1\i0  - toggles the display of the optional VU bargraph meters\
+	\
+	
+\f3\i Meter scales
+\f1\i0  - toggles display of the scale markings. What is shown depends on the layout and settings for the various elements, but essentially this annotates the frequency and amplitude scales.\
+	\
+	
+\f3\i Track info
+\f1\i0  - toggles display of track info. Track Info is shown for 10 seconds when the track changes, and when it is first turned on.\
+	\
+	
+\f3\i Include album
+\f1\i0  - adds album name to the track info. When playing streamed (as opposed to library) content, this option has no effect.\
+	\
+	
+\f3\i Font size
+\f1\i0  - selects the font size for the track info. This may be varied between 9pt and 30pt as the slider is dragged. Text will wrap to use multiple lines as necessary.\
+\
+	
+\f3\i Stay visible
+\f1\i0  - the track info doesn't disappear after 10 seconds, but stays on all the time.\
+\
+
+\f0\b Meters
+\f1\b0 \
+	Here you can set the characteristics of all the individual meters.\
+\
+	
+\f3\i Linear / Log response
+\f1\i0  - this sets the characteristic response for the meters. A Linear meter responds to all sounds equally, but the human ear does not. A logarithmic response is therefore better suited to most kinds of sound, because the display will subjectively match what you hear. Effectively, the meter responds more to quiet sounds, and less to loud ones. The maximum extent of the bargraph is the same however, so a sound as loud as possible will give the same reading in both modes.\
+	\
+	
+\f3\i Exponential decay/Linear decay
+\f1\i0  - this sets the decay algorithm for the meters. An exponential decay emulates the normal RC (resistor-capacitor) network that is typically used in real-world metering applications. The decay rate sets the RC time constant for the emulated circuit. A linear decay uses a constant rate, which is equivalent to having the capacitor circuit discharged through a constant-current sink. The decay rate sets the total time to decay from a peak value reading.\
+\
+	
+\f3\i Peak indicator
+\f1\i0  - turns the peak indicators on or off.\
+	\
+	
+\f3\i Unlit segments
+\f1\i0  - shows unlit segments as very dark gray bars when checked.\
+\
+	
+\f3\i Bar decay rate
+\f1\i0  - sets the rate at which the main bars decay back when the sound value reduces or disappears. A longer time means a slower responding display, a shorter time will make it more flickery, but better able to follow rapid changes in a signal.\
+\
+	
+\f3\i Peak decay rate
+\f1\i0  - sets the decay rate for the peak indicator separately from the main bar. Normally it makes sense to make this rate faster than the main bar decay rate, but different settings will give a variety of behaviours which can be tuned to suit the music.\
+\
+	
+\f3\i Peak hold time
+\f1\i0  - sets the wait time for a peak indicator before it starts to decay. \
+	\
+
+\f0\b Colours\
+
+\f1\b0 	Here you can change the colours allocated to various display elements, and change the overall colour behaviour.\
+\
+	
+\f3\i Colour Mode
+\f1\i0  - sets the overall display mode. This can be 
+\f3\i Flat colours
+\f1\i0 , 
+\f3\i Blended colours to value, Blended colours to max
+\f1\i0 , or 
+\f3\i Animated colours
+\f1\i0 .\
+	
+\f3\i Flat colours
+\f1\i0  - there is just one colour allotted to the bar, and another to the peak indicator.\
+	
+\f3\i Blended colours to value
+\f1\i0  - this brings in an additional colour to the main bar. The display will calculate a gradient of colour between these two and draw the bar accordingly. The two end colours represent the current value and zero.\
+	
+\f3\i Blended colours to max
+\f1\i0  - as above, but the two end colours represent the max value (full scale) and zero. This gives a different effect.\
+	
+\f3\i Animated colours
+\f1\i0  - this dynamically applies values from the chosen palette to the display which changes over time. The resulting colours are blended using blended mode. This looks best when using one of the specially named blend palettes.\
+\
+	
+\f3\i Colour Palette
+\f1\i0  - chooses which palette is used for picking colours from, and which is also used for colour animation. The 
+\f3\i Default
+\f1\i0  and 
+\f3\i System colours
+\f1\i0  palettes are the best choices when using flat or blended mode. The other named palettes are best for use with animated colours.\
+\
+	
+\f3\i Meter elements
+\f1\i0  - these pop-ups allow you to quickly pick colours for the six separately programmable meter elements. For flat colours, the "alternate bar" colour will be unavailable. For animated colours, these settings are all unused and will be unavailable.\
+	\
+Note: If upgrading from version 2.0 to a later version, you may find that the colour palette in use is not the one you were using in the previous version. To correct this, simply reselect the desired palette in the menu.\
+\
+
+\f0\b About
+\f1\b0 \
+	Displays copyright info, version number and a quick reference to the keyboard shortcuts.\
+\
+
+\f0\b Keyboard shortcuts
+\f1\b0 \
+	When the iTunes window is frontmost, or you are in full-screen mode, some of the settings may be altered using a single letter keyboard shortcut. These are:\
+\
+	T - show track info. This turns on track info if it is off, then redisplays the current track info for 10 seconds.\
+	P - toggle peak indicators on or off\
+	L - flip left channel\
+	R - flip right channel\
+	V - toggle VU meters on or off (shows and hides them)\
+	S - toggles between side-by-side and back-to-back layout\
+	F - toggles between fixed size and fit-to-window\
+	B - toggles the border on or off\
+	N - toggles between linear and logarithmic modes\
+	E - toggles between exponential and linear decay modes\
+	< (,) - decrements number of frequency bands by one\
+	> (.) - increments number of frequency bands by one\
+	I - increase font size for track info (& redisplay it)\
+	D - decrease font size for track info (& redisplay it)\
+	A - toggles whether album info shown (& redisplay it)\
+	M - toggles meter scales\
+	X - turns on analogue VU meter layout (use S to change it back)\
+\
+\
+
+\f0\b System requirements:\
+
+\f1\b0 \
+Any Macintosh running Mac OS X 10.3 (Panther) or later, and iTunes 3 or later. A speed of 600 MHz or better will give best results. Any G3, G4, G5 or Intel processor is fine. This version (2.0.6) is a Universal Binary and runs on all Intel-based Macs. The visualizer works with all version of iTunes from 3.0 onwards, including 7.0\
+\
+Note: When you run iTunes 7.0 with this plug-in for the first time after upgrading from an earlier version of iTunes, you may experience a crash. The problem should clear itself when you run iTunes again. If it does not, try discarding the preferences file.\
+\
+
+\f0\b Copyright, disclaimer and all that guff:\
+
+\f1\b0 \
+You may freely use and distribute this plug-in as long as it is accompanied by this Read Me file, and is not modified in any way, nor resold. If you wish to bundle it on a CD or include it in the OS, or anything of that nature, please ask - I'll most probably agree. I do not make any claims as to the fitness for any purpose of this software, so if it doesn't work, you don't like it, or it blows up your computer, then it's not my fault.\
+\
+
+\f0\b History\
+\
+Version 2.0.6 
+\f1\b0 - 16th September, 2006
+\f0\b  - 
+\f1\b0 Universal Binary, adds larger display size, permanent track info option.\
+\
+Version 2.0.5 - adds another animation palette, analogue VU meter mode, and some other very minor tweaks.\
+\
+Version 2.0.4 - mostly bug fixes; displays streamed content info, adds "blended colours to max" mode.\
+\
+Version 2.0.3,	26th March, 2004 - adds meter scales, exponential decay, improved layout code, additional keyboard shortcuts, track info fading and more.\
+\
+Version 2.0.2, 19th March, 2004 - dramatically boosts performance by using direct pixel drawing instead of QuickDraw. No other feature changes.\
+\
+Version 2.0.1, 19th March, 2004 - extends system requirements back to include OS X 10.2. and iTunes 3.x or later. A number of requested enhancements included - see changelist.\
+\
+Version 2.0, 10th March, 2004 - first release for OS X 10.3 and iTunes 4.x.\
+\
+This release is version 2.0, because it is a complete rewrite of my earlier "LED Spectrum Analyser 1.1" which was available for SoundJam. Unfortunately, I managed to lose (read: delete without thinking) all of the source code to the original plug-in, which is why it's taken me so long to get around to making an iTunes version available. I will back up, I will back up....\
+\
+\'a92006 Graham Cox\
+email: graham.cox@bigpond.com\
+\
+ }

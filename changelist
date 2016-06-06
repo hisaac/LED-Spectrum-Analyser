@@ -1,0 +1,77 @@
+version 2.0.6 (September 06)
+
+- added additional display size, now "small" is the original size, "large" is the new size (800 wide) and "fit to window" is as before.
+- added "Stay visible" checkbox to track info; removed key shortcut for this.
+- increased maximum font size for track info to 48 points.
+- compiled for Intel Macs (Universal), includes a few minor code fixes to work on Intel.
+
+
+version 2.0.5
+
+- added additional animation palette
+- linear and log mode full-scale values now calibrated more accurately, giving better FSD agreement in the two modes
+- added "Choose random colours when track changes" setting
+- added analogue VU meters layout option - meters fairly simple at this stage
+
+
+version 2.0.4
+
+- bug fix - better port management ensures that all drawing ends up where it should
+- options dialog is now closed whenever the visualizer is turned off. This is better UI and also prevents some issues when
+adjusting settings with the visualizer inactive
+- added graduated colours to max option
+- slightly less broken when using small and medium visualizer sizes (not recommended)
+- streamed audio (e.g. radio stations) now correctly indicated in the track info
+
+
+version 2.0.3
+
+- track info now fades out rather than just blanking
+- added 'j' keyboard command to turn on track info permanently
+- added "unlit segments" feature, UI and pref key
+- VU meters now default to 54 segments (though previous saved pref honoured)
+- track info now uses current system encoding, so should now display non-Roman scripts correctly
+- implemented exponential decay
+- added UI to switch between linear and exp decay modes
+- recalibrated decay/hold controls to give more useful range
+- all timing/time constant computation now based on timestamp instead of counting frames- should give
+more consistent results on widely differing systems
+- added meter scales implementation and UI to enable/disable
+- now disregards pref for segment count - this optimises performance and layout. Back to back now uses 48 segments.
+- improved layout computations to give better results over a wider range of sizes.
+- frequency scale more accurate (based on computed log tables rather than geometric tables)
+- better choice of default colours, decay rates and other settings
+- keyboard shortcuts now display feedback text in main window
+
+
+version 2.0.2, March 19th 2004
+
+- huge performance improvement by using direct pixel drawing (QDMP)
+- bux fix in QDMP for 16-bit fill rect
+- extended range of peak hold slider
+
+
+
+version 2.0.1, March 19th 2004
+
+- layout changes in prefs dialog to avoid numerous cosmetic issues on 10.2 Jaguar
+- all slider controls now "live".
+- added frequency bands slider to provide interface to existing setting
+- added "Include album" checkbox to track info
+- added Font size slider for track info
+- changes to layout measurement to accommodate dynamic font size and frequency bands
+- added geometric binning tables to permit user-adjustable frequency bands
+- added keyboard controls for incrementing and decrementing bands (< and >)
+- bug fixed where palette attached to buttons wasn't the one shown in the pop-up in some circumstances
+- bug fixed where palette chosen for animated mode would revert to default when options closed and reopened
+- NIB file changed to use custom controls instead of HIView objects for colour pop-ups. This allows the buttons to work on 10.2.
+- track info now shows on initial startup of visualiser (if enabled)
+- added menu separator between standard palettes and animation palettes in colour palette pop-up
+(note this means that you might get the wrong palette first time you use this update - reselect the desired palette to correct this).
+- track info can now be in any colour (no UI at present, but editable in plist)
+- fix bug where peak colour was getting set to the same as the alt colour in animated mode
+- change to plugin logic to ensure display can't "glitch" while iTunes paused and user opens dialog
+- change so that trackinfo times out normally when iTunes is paused
+
+
+version 2.0, March 10 2004 - first release

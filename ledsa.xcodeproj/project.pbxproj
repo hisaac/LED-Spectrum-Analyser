@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01285BF200CC2F967F000001 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01285BF100CC2F967F000001 /* Carbon.framework */; };
+		01285C0400CC31B17F000001 /* iTunesAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 01285C0200CC31B17F000001 /* iTunesAPI.h */; };
+		01285C0500CC31B17F000001 /* iTunesVisualAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 01285C0300CC31B17F000001 /* iTunesVisualAPI.h */; };
+		01285C0A00CC3A4A7F000001 /* iTunesAPI.c in Sources */ = {isa = PBXBuildFile; fileRef = 01285C0900CC3A4A7F000001 /* iTunesAPI.c */; };
+		01285C0C00CC4AFE7F000001 /* SettingsDialog.nib in Resources */ = {isa = PBXBuildFile; fileRef = 01285C0B00CC4AFE7F000001 /* SettingsDialog.nib */; };
+		089C1680FE841241C02AAC07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		0AA190A0FE8422F4C02AAC07 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
+		BF033CCF0ABC0FDD0077A14C /* iTunesAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 01285C0200CC31B17F000001 /* iTunesAPI.h */; };
+		BF033CD00ABC0FDD0077A14C /* iTunesVisualAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 01285C0300CC31B17F000001 /* iTunesVisualAPI.h */; };
+		BF033CD10ABC0FDD0077A14C /* ITBarGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6133DA05F43CBE00E643DA /* ITBarGraph.h */; };
+		BF033CD20ABC0FDD0077A14C /* ITBarDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6133EB05F449BC00E643DA /* ITBarDisplay.h */; };
+		BF033CD30ABC0FDD0077A14C /* ITPlugIn.h in Headers */ = {isa = PBXBuildFile; fileRef = BF61355B05F539D100E643DA /* ITPlugIn.h */; };
+		BF033CD40ABC0FDD0077A14C /* ITSpectrumAnalyserPlugIn.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6135D905F5555800E643DA /* ITSpectrumAnalyserPlugIn.h */; };
+		BF033CD50ABC0FDD0077A14C /* CustomHIViewControl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF613BEA05F8365E00E643DA /* CustomHIViewControl.h */; };
+		BF033CD60ABC0FDD0077A14C /* QDMP.h in Headers */ = {isa = PBXBuildFile; fileRef = BF889CD6060A946A00D15072 /* QDMP.h */; };
+		BF033CD70ABC0FDD0077A14C /* ITPortSaver.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF91AF306159A9A00082F36 /* ITPortSaver.h */; };
+		BF033CD80ABC0FDD0077A14C /* ITAnalogueMeter.h in Headers */ = {isa = PBXBuildFile; fileRef = BF13C1700645DCC900785494 /* ITAnalogueMeter.h */; };
+		BF033CD90ABC0FDD0077A14C /* ITScrollDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = BFAD987E065B7E2500EC6EB7 /* ITScrollDisplay.h */; };
+		BF033CDB0ABC0FDD0077A14C /* SettingsDialog.nib in Resources */ = {isa = PBXBuildFile; fileRef = 01285C0B00CC4AFE7F000001 /* SettingsDialog.nib */; };
+		BF033CDC0ABC0FDD0077A14C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		BF033CDD0ABC0FDD0077A14C /* analyser.resources in Resources */ = {isa = PBXBuildFile; fileRef = BF6802AE05FC422D005C38BA /* analyser.resources */; };
+		BF033CDE0ABC0FDD0077A14C /* LED Spectrum Analyser Read Me.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = BF6805C005FEE188005C38BA /* LED Spectrum Analyser Read Me.rtfd */; };
+		BF033CDF0ABC0FDD0077A14C /* changelist in Resources */ = {isa = PBXBuildFile; fileRef = BF08B4570606C49E004DFF71 /* changelist */; };
+		BF033CE10ABC0FDD0077A14C /* iTunesAPI.c in Sources */ = {isa = PBXBuildFile; fileRef = 01285C0900CC3A4A7F000001 /* iTunesAPI.c */; };
+		BF033CE20ABC0FDD0077A14C /* ITBarGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6133DB05F43CBE00E643DA /* ITBarGraph.cpp */; };
+		BF033CE30ABC0FDD0077A14C /* ITBarDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6133EC05F449BC00E643DA /* ITBarDisplay.cpp */; };
+		BF033CE40ABC0FDD0077A14C /* ITPlugIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF61355C05F539D100E643DA /* ITPlugIn.cpp */; };
+		BF033CE50ABC0FDD0077A14C /* ITSpectrumAnalyserPlugIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6135DA05F5555800E643DA /* ITSpectrumAnalyserPlugIn.cpp */; };
+		BF033CE60ABC0FDD0077A14C /* CustomHIViewControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF613BEB05F8365E00E643DA /* CustomHIViewControl.cpp */; };
+		BF033CE70ABC0FDD0077A14C /* QDMP.c in Sources */ = {isa = PBXBuildFile; fileRef = BF889CD0060A945C00D15072 /* QDMP.c */; };
+		BF033CE80ABC0FDD0077A14C /* ITPortSaver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF91AF406159A9A00082F36 /* ITPortSaver.cpp */; };
+		BF033CE90ABC0FDD0077A14C /* ITAnalogueMeter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF13C1710645DCC900785494 /* ITAnalogueMeter.cpp */; };
+		BF033CEA0ABC0FDD0077A14C /* ITScrollDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFAD987F065B7E2500EC6EB7 /* ITScrollDisplay.cpp */; };
+		BF033CEC0ABC0FDD0077A14C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
+		BF033CED0ABC0FDD0077A14C /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01285BF100CC2F967F000001 /* Carbon.framework */; };
+		BF08B4580606C49E004DFF71 /* changelist in Resources */ = {isa = PBXBuildFile; fileRef = BF08B4570606C49E004DFF71 /* changelist */; };
+		BF13C1720645DCC900785494 /* ITAnalogueMeter.h in Headers */ = {isa = PBXBuildFile; fileRef = BF13C1700645DCC900785494 /* ITAnalogueMeter.h */; };
+		BF13C1730645DCC900785494 /* ITAnalogueMeter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF13C1710645DCC900785494 /* ITAnalogueMeter.cpp */; };
+		BF6133DC05F43CBE00E643DA /* ITBarGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6133DA05F43CBE00E643DA /* ITBarGraph.h */; };
+		BF6133DD05F43CBE00E643DA /* ITBarGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6133DB05F43CBE00E643DA /* ITBarGraph.cpp */; };
+		BF6133ED05F449BC00E643DA /* ITBarDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6133EB05F449BC00E643DA /* ITBarDisplay.h */; };
+		BF6133EE05F449BC00E643DA /* ITBarDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6133EC05F449BC00E643DA /* ITBarDisplay.cpp */; };
+		BF61355D05F539D100E643DA /* ITPlugIn.h in Headers */ = {isa = PBXBuildFile; fileRef = BF61355B05F539D100E643DA /* ITPlugIn.h */; };
+		BF61355E05F539D100E643DA /* ITPlugIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF61355C05F539D100E643DA /* ITPlugIn.cpp */; };
+		BF6135DB05F5555800E643DA /* ITSpectrumAnalyserPlugIn.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6135D905F5555800E643DA /* ITSpectrumAnalyserPlugIn.h */; };
+		BF6135DC05F5555800E643DA /* ITSpectrumAnalyserPlugIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF6135DA05F5555800E643DA /* ITSpectrumAnalyserPlugIn.cpp */; };
+		BF613BEC05F8365E00E643DA /* CustomHIViewControl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF613BEA05F8365E00E643DA /* CustomHIViewControl.h */; };
+		BF613BED05F8365E00E643DA /* CustomHIViewControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF613BEB05F8365E00E643DA /* CustomHIViewControl.cpp */; };
+		BF6802AF05FC422D005C38BA /* analyser.resources in Resources */ = {isa = PBXBuildFile; fileRef = BF6802AE05FC422D005C38BA /* analyser.resources */; };
+		BF6805C105FEE188005C38BA /* LED Spectrum Analyser Read Me.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = BF6805C005FEE188005C38BA /* LED Spectrum Analyser Read Me.rtfd */; };
+		BF889CD1060A945C00D15072 /* QDMP.c in Sources */ = {isa = PBXBuildFile; fileRef = BF889CD0060A945C00D15072 /* QDMP.c */; };
+		BF889CD7060A946A00D15072 /* QDMP.h in Headers */ = {isa = PBXBuildFile; fileRef = BF889CD6060A946A00D15072 /* QDMP.h */; };
+		BFAD9880065B7E2500EC6EB7 /* ITScrollDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = BFAD987E065B7E2500EC6EB7 /* ITScrollDisplay.h */; };
+		BFAD9881065B7E2500EC6EB7 /* ITScrollDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFAD987F065B7E2500EC6EB7 /* ITScrollDisplay.cpp */; };
+		BFF91AF506159A9A00082F36 /* ITPortSaver.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF91AF306159A9A00082F36 /* ITPortSaver.h */; };
+		BFF91AF606159A9A00082F36 /* ITPortSaver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF91AF406159A9A00082F36 /* ITPortSaver.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBundleTarget section */
+		089C1673FE841209C02AAC07 /* iTunesX Visualizer */ = {
+			isa = PBXBundleTarget;
+			buildConfigurationList = BF22E0780A77ADF700AC5259 /* Build configuration list for PBXBundleTarget "iTunesX Visualizer" */;
+			buildPhases = (
+				089C1674FE841209C02AAC07 /* Headers */,
+				089C1675FE841209C02AAC07 /* Resources */,
+				089C1676FE841209C02AAC07 /* Sources */,
+				089C1677FE841209C02AAC07 /* Frameworks */,
+				089C1679FE841209C02AAC07 /* Rez */,
+			);
+			dependencies = (
+			);
+			name = "iTunesX Visualizer";
+			productInstallPath = "/Users/guillerm/Library/iTunes/iTunes Plug-ins";
+			productName = iTunesXPlugIn;
+			productReference = BF5FADE10B5037990012AEF1 /* LEDSpectrumAnalyser.bundle */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>LEDSpectrumAnalyser</string>
+	<key>CFBundleGetInfoString</key>
+	<string>©Graham Cox</string>
+	<key>CFBundleIdentifier</key>
+	<string>LEDSpectrumAnalyser</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>LED Spectrum Analyser</string>
+	<key>CFBundlePackageType</key>
+	<string>hvpl</string>
+	<key>CFBundleShortVersionString</key>
+	<string>v2.0.5</string>
+	<key>CFBundleSignature</key>
+	<string>hook</string>
+	<key>CFBundleVersion</key>
+	<string>2.0.5</string>
+	<key>CFPlugInDynamicRegisterFunction</key>
+	<string></string>
+	<key>CFPlugInDynamicRegistration</key>
+	<string>NO</string>
+	<key>CFPlugInFactories</key>
+	<dict>
+		<key>00000000-0000-0000-0000-000000000000</key>
+		<string>MyFactoryFunction</string>
+	</dict>
+	<key>CFPlugInTypes</key>
+	<dict>
+		<key>00000000-0000-0000-0000-000000000000</key>
+		<array>
+			<string>00000000-0000-0000-0000-000000000000</string>
+		</array>
+	</dict>
+	<key>CFPlugInUnloadFunction</key>
+	<string></string>
+</dict>
+</plist>
+";
+		};
+/* End PBXBundleTarget section */
+
+/* Begin PBXFileReference section */
+		01285BF100CC2F967F000001 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		01285C0200CC31B17F000001 /* iTunesAPI.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = iTunesAPI.h; sourceTree = "<group>"; };
+		01285C0300CC31B17F000001 /* iTunesVisualAPI.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = iTunesVisualAPI.h; sourceTree = "<group>"; };
+		01285C0900CC3A4A7F000001 /* iTunesAPI.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = iTunesAPI.c; sourceTree = "<group>"; };
+		01285C0B00CC4AFE7F000001 /* SettingsDialog.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = SettingsDialog.nib; sourceTree = "<group>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		BF033CF30ABC0FDD0077A14C /* Info-iTunesX_Visualizer__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-iTunesX_Visualizer__Upgraded_.plist"; sourceTree = "<group>"; };
+		BF033CF40ABC0FDD0077A14C /* LEDSpectrumAnalyser.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LEDSpectrumAnalyser.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF08B4570606C49E004DFF71 /* changelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = changelist; sourceTree = "<group>"; };
+		BF13C1700645DCC900785494 /* ITAnalogueMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITAnalogueMeter.h; sourceTree = "<group>"; };
+		BF13C1710645DCC900785494 /* ITAnalogueMeter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ITAnalogueMeter.cpp; sourceTree = "<group>"; };
+		BF5FADE10B5037990012AEF1 /* LEDSpectrumAnalyser.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LEDSpectrumAnalyser.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6133DA05F43CBE00E643DA /* ITBarGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITBarGraph.h; sourceTree = "<group>"; };
+		BF6133DB05F43CBE00E643DA /* ITBarGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ITBarGraph.cpp; sourceTree = "<group>"; };
+		BF6133EB05F449BC00E643DA /* ITBarDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITBarDisplay.h; sourceTree = "<group>"; };
+		BF6133EC05F449BC00E643DA /* ITBarDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ITBarDisplay.cpp; sourceTree = "<group>"; };
+		BF61355B05F539D100E643DA /* ITPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITPlugIn.h; sourceTree = "<group>"; };
+		BF61355C05F539D100E643DA /* ITPlugIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ITPlugIn.cpp; sourceTree = "<group>"; };
+		BF6135D905F5555800E643DA /* ITSpectrumAnalyserPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITSpectrumAnalyserPlugIn.h; sourceTree = "<group>"; };
+		BF6135DA05F5555800E643DA /* ITSpectrumAnalyserPlugIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ITSpectrumAnalyserPlugIn.cpp; sourceTree = "<group>"; };
+		BF613BEA05F8365E00E643DA /* CustomHIViewControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHIViewControl.h; sourceTree = "<group>"; };
+		BF613BEB05F8365E00E643DA /* CustomHIViewControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomHIViewControl.cpp; sourceTree = "<group>"; };
+		BF6802AE05FC422D005C38BA /* analyser.resources */ = {isa = PBXFileReference; lastKnownFileType = file; path = analyser.resources; sourceTree = "<group>"; };
+		BF6805C005FEE188005C38BA /* LED Spectrum Analyser Read Me.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = "LED Spectrum Analyser Read Me.rtfd"; sourceTree = "<group>"; };
+		BF889CD0060A945C00D15072 /* QDMP.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = QDMP.c; path = QDMP/QDMP.c; sourceTree = "<group>"; };
+		BF889CD6060A946A00D15072 /* QDMP.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = QDMP.h; path = QDMP/QDMP.h; sourceTree = "<group>"; };
+		BFAD987E065B7E2500EC6EB7 /* ITScrollDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITScrollDisplay.h; sourceTree = "<group>"; };
+		BFAD987F065B7E2500EC6EB7 /* ITScrollDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ITScrollDisplay.cpp; sourceTree = "<group>"; };
+		BFF91AF306159A9A00082F36 /* ITPortSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITPortSaver.h; sourceTree = "<group>"; };
+		BFF91AF406159A9A00082F36 /* ITPortSaver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ITPortSaver.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		089C1677FE841209C02AAC07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA190A0FE8422F4C02AAC07 /* CoreFoundation.framework in Frameworks */,
+				01285BF200CC2F967F000001 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF033CEB0ABC0FDD0077A14C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF033CEC0ABC0FDD0077A14C /* CoreFoundation.framework in Frameworks */,
+				BF033CED0ABC0FDD0077A14C /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01285C0000CC31B17F000001 /* iTuneVisualAPI */ = {
+			isa = PBXGroup;
+			children = (
+				01285C0900CC3A4A7F000001 /* iTunesAPI.c */,
+				01285C0200CC31B17F000001 /* iTunesAPI.h */,
+				01285C0300CC31B17F000001 /* iTunesVisualAPI.h */,
+			);
+			path = iTuneVisualAPI;
+			sourceTree = "<group>";
+		};
+		089C166AFE841209C02AAC07 /* iTunesXPlugIn */ = {
+			isa = PBXGroup;
+			children = (
+				BF6805C005FEE188005C38BA /* LED Spectrum Analyser Read Me.rtfd */,
+				BF6802AE05FC422D005C38BA /* analyser.resources */,
+				BF08B4570606C49E004DFF71 /* changelist */,
+				08FB77AFFE84173DC02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+				BF033CF30ABC0FDD0077A14C /* Info-iTunesX_Visualizer__Upgraded_.plist */,
+			);
+			name = iTunesXPlugIn;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
+				01285BF100CC2F967F000001 /* Carbon.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01285C0B00CC4AFE7F000001 /* SettingsDialog.nib */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BF889CD6060A946A00D15072 /* QDMP.h */,
+				BF889CD0060A945C00D15072 /* QDMP.c */,
+				BF61355B05F539D100E643DA /* ITPlugIn.h */,
+				BF61355C05F539D100E643DA /* ITPlugIn.cpp */,
+				BF13C1700645DCC900785494 /* ITAnalogueMeter.h */,
+				BF13C1710645DCC900785494 /* ITAnalogueMeter.cpp */,
+				BF6133DA05F43CBE00E643DA /* ITBarGraph.h */,
+				BF6133DB05F43CBE00E643DA /* ITBarGraph.cpp */,
+				BFAD987E065B7E2500EC6EB7 /* ITScrollDisplay.h */,
+				BFAD987F065B7E2500EC6EB7 /* ITScrollDisplay.cpp */,
+				BF6133EB05F449BC00E643DA /* ITBarDisplay.h */,
+				BF6133EC05F449BC00E643DA /* ITBarDisplay.cpp */,
+				BF6135D905F5555800E643DA /* ITSpectrumAnalyserPlugIn.h */,
+				BF6135DA05F5555800E643DA /* ITSpectrumAnalyserPlugIn.cpp */,
+				BF613BEA05F8365E00E643DA /* CustomHIViewControl.h */,
+				BF613BEB05F8365E00E643DA /* CustomHIViewControl.cpp */,
+				BFF91AF306159A9A00082F36 /* ITPortSaver.h */,
+				BFF91AF406159A9A00082F36 /* ITPortSaver.cpp */,
+				01285C0000CC31B17F000001 /* iTuneVisualAPI */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF033CF40ABC0FDD0077A14C /* LEDSpectrumAnalyser.bundle */,
+				BF5FADE10B5037990012AEF1 /* LEDSpectrumAnalyser.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		089C1674FE841209C02AAC07 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01285C0400CC31B17F000001 /* iTunesAPI.h in Headers */,
+				01285C0500CC31B17F000001 /* iTunesVisualAPI.h in Headers */,
+				BF6133DC05F43CBE00E643DA /* ITBarGraph.h in Headers */,
+				BF6133ED05F449BC00E643DA /* ITBarDisplay.h in Headers */,
+				BF61355D05F539D100E643DA /* ITPlugIn.h in Headers */,
+				BF6135DB05F5555800E643DA /* ITSpectrumAnalyserPlugIn.h in Headers */,
+				BF613BEC05F8365E00E643DA /* CustomHIViewControl.h in Headers */,
+				BF889CD7060A946A00D15072 /* QDMP.h in Headers */,
+				BFF91AF506159A9A00082F36 /* ITPortSaver.h in Headers */,
+				BF13C1720645DCC900785494 /* ITAnalogueMeter.h in Headers */,
+				BFAD9880065B7E2500EC6EB7 /* ITScrollDisplay.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF033CCE0ABC0FDD0077A14C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF033CCF0ABC0FDD0077A14C /* iTunesAPI.h in Headers */,
+				BF033CD00ABC0FDD0077A14C /* iTunesVisualAPI.h in Headers */,
+				BF033CD10ABC0FDD0077A14C /* ITBarGraph.h in Headers */,
+				BF033CD20ABC0FDD0077A14C /* ITBarDisplay.h in Headers */,
+				BF033CD30ABC0FDD0077A14C /* ITPlugIn.h in Headers */,
+				BF033CD40ABC0FDD0077A14C /* ITSpectrumAnalyserPlugIn.h in Headers */,
+				BF033CD50ABC0FDD0077A14C /* CustomHIViewControl.h in Headers */,
+				BF033CD60ABC0FDD0077A14C /* QDMP.h in Headers */,
+				BF033CD70ABC0FDD0077A14C /* ITPortSaver.h in Headers */,
+				BF033CD80ABC0FDD0077A14C /* ITAnalogueMeter.h in Headers */,
+				BF033CD90ABC0FDD0077A14C /* ITScrollDisplay.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BF033CCD0ABC0FDD0077A14C /* iTunesX Visualizer (Upgraded) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF033CEF0ABC0FDD0077A14C /* Build configuration list for PBXNativeTarget "iTunesX Visualizer (Upgraded)" */;
+			buildPhases = (
+				BF033CCE0ABC0FDD0077A14C /* Headers */,
+				BF033CDA0ABC0FDD0077A14C /* Resources */,
+				BF033CE00ABC0FDD0077A14C /* Sources */,
+				BF033CEB0ABC0FDD0077A14C /* Frameworks */,
+				BF033CEE0ABC0FDD0077A14C /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iTunesX Visualizer (Upgraded)";
+			productInstallPath = "/Users/guillerm/Library/iTunes/iTunes Plug-ins";
+			productName = iTunesXPlugIn;
+			productReference = BF033CF40ABC0FDD0077A14C /* LEDSpectrumAnalyser.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = BF22E07C0A77ADF700AC5259 /* Build configuration list for PBXProject "ledsa" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* iTunesXPlugIn */;
+			projectDirPath = "";
+			targets = (
+				BF033CCD0ABC0FDD0077A14C /* iTunesX Visualizer (Upgraded) */,
+				089C1673FE841209C02AAC07 /* iTunesX Visualizer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		089C1675FE841209C02AAC07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01285C0C00CC4AFE7F000001 /* SettingsDialog.nib in Resources */,
+				089C1680FE841241C02AAC07 /* InfoPlist.strings in Resources */,
+				BF6802AF05FC422D005C38BA /* analyser.resources in Resources */,
+				BF6805C105FEE188005C38BA /* LED Spectrum Analyser Read Me.rtfd in Resources */,
+				BF08B4580606C49E004DFF71 /* changelist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF033CDA0ABC0FDD0077A14C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF033CDB0ABC0FDD0077A14C /* SettingsDialog.nib in Resources */,
+				BF033CDC0ABC0FDD0077A14C /* InfoPlist.strings in Resources */,
+				BF033CDD0ABC0FDD0077A14C /* analyser.resources in Resources */,
+				BF033CDE0ABC0FDD0077A14C /* LED Spectrum Analyser Read Me.rtfd in Resources */,
+				BF033CDF0ABC0FDD0077A14C /* changelist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		089C1679FE841209C02AAC07 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF033CEE0ABC0FDD0077A14C /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		089C1676FE841209C02AAC07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01285C0A00CC3A4A7F000001 /* iTunesAPI.c in Sources */,
+				BF6133DD05F43CBE00E643DA /* ITBarGraph.cpp in Sources */,
+				BF6133EE05F449BC00E643DA /* ITBarDisplay.cpp in Sources */,
+				BF61355E05F539D100E643DA /* ITPlugIn.cpp in Sources */,
+				BF6135DC05F5555800E643DA /* ITSpectrumAnalyserPlugIn.cpp in Sources */,
+				BF613BED05F8365E00E643DA /* CustomHIViewControl.cpp in Sources */,
+				BF889CD1060A945C00D15072 /* QDMP.c in Sources */,
+				BFF91AF606159A9A00082F36 /* ITPortSaver.cpp in Sources */,
+				BF13C1730645DCC900785494 /* ITAnalogueMeter.cpp in Sources */,
+				BFAD9881065B7E2500EC6EB7 /* ITScrollDisplay.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF033CE00ABC0FDD0077A14C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF033CE10ABC0FDD0077A14C /* iTunesAPI.c in Sources */,
+				BF033CE20ABC0FDD0077A14C /* ITBarGraph.cpp in Sources */,
+				BF033CE30ABC0FDD0077A14C /* ITBarDisplay.cpp in Sources */,
+				BF033CE40ABC0FDD0077A14C /* ITPlugIn.cpp in Sources */,
+				BF033CE50ABC0FDD0077A14C /* ITSpectrumAnalyserPlugIn.cpp in Sources */,
+				BF033CE60ABC0FDD0077A14C /* CustomHIViewControl.cpp in Sources */,
+				BF033CE70ABC0FDD0077A14C /* QDMP.c in Sources */,
+				BF033CE80ABC0FDD0077A14C /* ITPortSaver.cpp in Sources */,
+				BF033CE90ABC0FDD0077A14C /* ITAnalogueMeter.cpp in Sources */,
+				BF033CEA0ABC0FDD0077A14C /* ITScrollDisplay.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF033CF00ABC0FDD0077A14C /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-iTunesX_Visualizer__Upgraded_.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = LEDSpectrumAnalyser;
+				RESMERGER_SOURCES_FORK = auto;
+				REZ_EXECUTABLE = YES;
+				REZ_RESOURCE_MAP_READ_ONLY = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		BF033CF10ABC0FDD0077A14C /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-iTunesX_Visualizer__Upgraded_.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = LEDSpectrumAnalyser;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		BF033CF20ABC0FDD0077A14C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-iTunesX_Visualizer__Upgraded_.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = LEDSpectrumAnalyser;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Default;
+		};
+		BF22E0790A77ADF700AC5259 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = LEDSpectrumAnalyser;
+				RESMERGER_SOURCES_FORK = auto;
+				REZ_EXECUTABLE = YES;
+				REZ_RESOURCE_MAP_READ_ONLY = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		BF22E07A0A77ADF700AC5259 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				OPTIMIZATION_CFLAGS = "-O3";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = LEDSpectrumAnalyser;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		BF22E07B0A77ADF700AC5259 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O3";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = LEDSpectrumAnalyser;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Default;
+		};
+		BF22E07D0A77ADF700AC5259 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Development;
+		};
+		BF22E07E0A77ADF700AC5259 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Deployment;
+		};
+		BF22E07F0A77ADF700AC5259 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF033CEF0ABC0FDD0077A14C /* Build configuration list for PBXNativeTarget "iTunesX Visualizer (Upgraded)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF033CF00ABC0FDD0077A14C /* Development */,
+				BF033CF10ABC0FDD0077A14C /* Deployment */,
+				BF033CF20ABC0FDD0077A14C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		BF22E0780A77ADF700AC5259 /* Build configuration list for PBXBundleTarget "iTunesX Visualizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF22E0790A77ADF700AC5259 /* Development */,
+				BF22E07A0A77ADF700AC5259 /* Deployment */,
+				BF22E07B0A77ADF700AC5259 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		BF22E07C0A77ADF700AC5259 /* Build configuration list for PBXProject "ledsa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF22E07D0A77ADF700AC5259 /* Development */,
+				BF22E07E0A77ADF700AC5259 /* Deployment */,
+				BF22E07F0A77ADF700AC5259 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
