@@ -1,8 +1,9 @@
-# LEDSA - LED Spectrum Analyzer for iTunes
-by [Graham Cox](http://apptree.net/about.htm) of [Apptree.net](http://apptree.net/index.htm)
+# LED Spectrum Analyzer for iTunes
 
-Original project page can be found here: [http://apptree.net/ledsa.htm](http://apptree.net/ledsa.htm)
+[![Not Maintained](https://img.shields.io/badge/Maintenance%20Level-Not%20Maintained-yellow.svg)](https://gist.github.com/cheerfulstoic/d107229326a01ff0f333a1d3476e068d)
 
-**From hisaac:** I clain no ownership of this code. LED Spectrum Analyzer has been my go to iTunes visualizer for years. It seems that development has stagnated (Graham's last update was May 19th, 2014), but Graham kindly open sourced the plugin for us all to poke around at.
+This iTunes visualizer was originally developed by Graham Cox of Apptree software. Graham has let [his website](http://apptree.net)'s domain registration expire, and doesn't plan to continue updating or supporting this project. Thankfully, before the domain expired, he kindly open sourced the plugin's code.
 
-Someday, I'd like to update this, but for now it's just a public repository.
+I downloaded a copy of the code, and have uploaded it here for archival purposes. **This project is currently not maintained**, but if you want to hack on it, please feel free. If you would like to be the maintainer of this project, please get in touch with me.
+
+Note: I am not a macOS developer, so I will not be able to help resolve issues. That said, please feel free to open issues for other people to help with.
